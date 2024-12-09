@@ -1,0 +1,86 @@
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9e7c7;
+    color: #333;
+}
+
+header {
+    background-color: #c4af89;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.settings-icon,
+.menu-icon,
+.user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+}
+
+.menu-icon::after,
+.menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    top: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+}
+
+.content {
+    text-align: center;
+}
+
+.robot-icon {
+    width: 80px;
+    height: 80px;
+    background: url('robot-icon.png') no-repeat center center;
+    background-size: contain;
+    margin: 20px auto;
+}
+
+.describe-problem-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c4af89;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.describe-problem-btn:hover {
+    background-color: #b89c73;
+}
